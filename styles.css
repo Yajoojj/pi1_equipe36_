@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.logo-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cube-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-top: 6rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+.text-content {
+    color: white;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.image-placeholder {
+    position: relative;
+    aspect-ratio: 1;
+    background: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-blur {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.2;
+}
+
+#gradient1 {
+    top: 0;
+    right: 0;
+    background: #FFD700;
+}
+
+#gradient2 {
+    bottom: 0;
+    right: 0;
+    background: #FF0000;
+}
+
+#gradient3 {
+    top: 50%;
+    right: 50%;
+    background: #0068FF;
+}
+
+.setor-x {
+    padding: 4rem 2rem;
+    color: white;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.setor-x-tt {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.photo-circle {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid #333;
+    overflow: hidden;
+    background: #111;
+}
+
+.photo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.project-section {
+    padding: 6rem 2rem;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.project-image-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 4rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.info-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFD700;
+}
+
+.info-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.logo-text a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo-text a:hover {
+    color: #FFD700;
+}
+
+.integrantes-section {
+    padding: 6rem 2rem 2rem;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
