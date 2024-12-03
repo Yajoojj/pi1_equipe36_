@@ -200,6 +200,8 @@ nav {
     object-fit: cover;
 }
 
+
+
 .project-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -224,7 +226,7 @@ nav {
 .info-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #FFD700;
+    color: #447AAB;
 }
 
 .info-card p {
@@ -243,6 +245,8 @@ nav {
     color: #FFD700;
 }
 
+
+
 .integrantes-section {
     padding: 6rem 2rem 2rem;
     color: white;
@@ -255,4 +259,9 @@ nav {
     font-weight: bold;
     margin-bottom: 3rem;
     text-align: center;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
